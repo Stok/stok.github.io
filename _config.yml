@@ -1,0 +1,18 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Stoked projects
+email: sean.tokunaga@gmail.com
+description: A collection of little projects I've been working on.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://stok.github.com" # the base hostname & protocol for your site
+twitter_username: sktok
+github_username:  STok
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "First Post!"
+date:   2016-02-16 00:26:57 +0100
+categories: Hello World
+---
+I'm discovering this as I go. Very exciting for me, not so exciting for anyone stumbling onto this page.
+The plan is to assemble my various pet computing projects here.
