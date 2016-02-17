@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Controlling molecular beams"
+date:   2016-02-17 14:47 +0100
+categories: Projects
+---
+While working at the Centre for Cold Matter at Imperial College London, I contributed to some control code for atomic/molecular beam experiments called [EDMSuite].
+Typical experiments look like this:
+
+![Li_experiment](/photos/ccm_experiment_1.jpg)
+![LiH_experiment](/photos/ccm_experiment_2.jpg)
+![lasers](/photos/ccm_experiment_3.jpg)
+
+The control software does a bunch of stuff as required:
+
+- opens/closes and pulses valves and gates for the molecular/atomic beams
+
+- switches lasers on/off and controls their frequencies
+
+- controls various electric and magnetic fields.
+
+- Acquires and stores data. Depending on the experiment, the data may be analog voltages, TTL, or images.
+
+More info [here].
+
+[EDMSuite]: https://github.com/ColdMatter/EDMSuite
+[here]: https://github.com/ColdMatter/EDMSuite

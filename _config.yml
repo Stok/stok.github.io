@@ -7,11 +7,11 @@
 
 # Site settings
 title: Stoked projects
-email: sean.tokunaga@gmail.com
+email: sean@stokedprojects.org
 description: A collection of little projects I've been working on.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stok.github.com" # the base hostname & protocol for your site
-twitter_username: sktok
+#twitter_username: sktok
 github_username:  STok
 
 # Build settings
