@@ -7,7 +7,6 @@ categories: Projects
 While working at the Centre for Cold Matter at Imperial College London, I contributed to some control code for atomic/molecular beam experiments called [EDMSuite].
 Typical experiments look like this:
 
-![Li_experiment](/photos/ccm_experiment_1.jpg)
 ![LiH_experiment](/photos/ccm_experiment_2.jpg)
 ![lasers](/photos/ccm_experiment_3.jpg)
 
@@ -22,7 +21,10 @@ The control software does a bunch of stuff as required:
 - Acquires and stores data. Depending on the experiment, the data may be analog voltages, TTL, or images.
 
 The code is written such that it can (reasonnably) easily be customised to control any beam experiment.
-Also, In 2011-2012, some code was added so that EDMSuite could also control [MOT experiments].
+Also, In 2011-2012, some code was added so that EDMSuite could also control [MOT experiments] like this one:
+
+![Li_experiment](/photos/ccm_experiment_1.jpg)
+
 More info [here].
 
 [EDMSuite]: https://github.com/ColdMatter/EDMSuite
