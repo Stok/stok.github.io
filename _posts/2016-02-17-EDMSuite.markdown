@@ -21,7 +21,10 @@ The control software does a bunch of stuff as required:
 
 - Acquires and stores data. Depending on the experiment, the data may be analog voltages, TTL, or images.
 
+The code is written such that it can (reasonnably) easily be customised to control any beam experiment.
+Also, In 2011-2012, some code was added so that EDMSuite could also control [MOT experiments].
 More info [here].
 
 [EDMSuite]: https://github.com/ColdMatter/EDMSuite
 [here]: https://github.com/ColdMatter/EDMSuite
+[MOT experiments]: https://en.wikipedia.org/wiki/Magneto-optical_trap
