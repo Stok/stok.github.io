@@ -74,7 +74,7 @@ I figure that's a pretty good start.
 A few examples of things that worked less well:
  
 - Mathematica returns start and end times of notes when you Import MIDI files. But if you use those directly, you seem to end up with a column
-comprising the average start/end times of a note in a piece. 
+comprising the average start/end time of a note in a piece. 
 Result: "Silence for a minute", chaotic explosion of 100 notes played in a 10 second interval, then silence for another minute.
 
 - Assembling chords into a single row is good. Without it, the result feels a lot more "scattered". 
