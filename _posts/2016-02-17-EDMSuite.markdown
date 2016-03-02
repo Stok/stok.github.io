@@ -10,7 +10,7 @@ Typical experiments look like this:
 ![LiH_experiment](/photos/ccm_experiment_2.jpg)
 ![lasers](/photos/ccm_experiment_3.jpg)
 
-The control software does a bunch of stuff as required:
+The control software does a bunch of stuff:
 
 - opens/closes and pulses valves and gates for the molecular/atomic beams
 
