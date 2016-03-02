@@ -20,8 +20,10 @@ The control software does a bunch of stuff:
 
 - Acquires and stores data. Depending on the experiment, the data may be analog voltages, TTL, or images.
 
-The code is written such that it can (reasonably) easily be customised to control any beam experiment.
-Also, In 2011-2012, some code was added so that EDMSuite could also control [MOT experiments] like this one:
+The code is written so that it can (relatively easily) be customised to control any beam experiment. 
+It currently runs half a dozen experiments in two different labs (London and Paris).
+
+In 2011-2012, I added a whole bunch of code so EDMSuite could also control [MOT experiments] like this one:
 
 ![Li_experiment](/photos/ccm_experiment_1.jpg)
 
