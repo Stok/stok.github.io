@@ -18,7 +18,7 @@ It was so funny that had to get in on this. My first attempt was to teach it the
 Here I'm trying something else: if I could convert music into character form, 
 I might be able to teach my computer to compose music! A composing-rnn, broadcasting live out into the wilderness of the internet.
 
-I mostly treat the rnn code as a black box. But Karpathy's code (as well as his "Usage" guide) is simple enough to be able to get up and running quickly.
+I mostly treat the rnn code as a black box. But Karpathy's code (as well as his "Usage" guide) is simple enough to be able to get it up and running quickly.
 Once you've done his Shakespeare example, all you really have to do is to replace the input text with whatever you want your rnn to learn.
  
 This meant that for my music project, the main task was finding the right format to use. 
