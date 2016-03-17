@@ -109,11 +109,11 @@ It'd be like guessing the behaviour of some gargantuan Fortran code by reading o
 Also, God forbit any unusual circumstances... What do you do if the answer isn't in the book?
 
 But my biggest grievance is: what's the point of a rulebook if it's written in such impenetrable language?
-I wonder what would happen if no one could ever figure out what the rules were? Well, [this].
+I wonder what would happen if no one could ever figure out what the rules were? [...This]?
 
 [last post]: /projects/2016/02/26/iChopin.html
 [rnn that learns text]: https://github.com/karpathy/char-rnn
 [usage guide]: https://github.com/karpathy/char-rnn
 [legifrance]: http://www.legifrance.gouv.fr
 [github page]: https://github.com/Stok/CCGenerator
-[this]: https://en.wikipedia.org/wiki/The_Trial
+[...This]: https://en.wikipedia.org/wiki/The_Trial
