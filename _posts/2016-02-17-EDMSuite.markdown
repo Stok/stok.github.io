@@ -4,7 +4,7 @@ title:  "Controlling molecular beams"
 date:   2016-02-17 14:47 +0100
 categories: Projects
 ---
-While working at the Centre for Cold Matter at Imperial College London, I contributed to some control code for atomic/molecular beam experiments called [EDMSuite].
+While working at the [Centre for Cold Matter] at Imperial College London, I contributed to some control code for atomic/molecular beam experiments called [EDMSuite].
 Typical experiments look like this:
 
 ![LiH_experiment](/photos/ccm_experiment_2.jpg)
@@ -29,6 +29,7 @@ In 2011-2012, I added a whole bunch of code so EDMSuite could also control [MOT 
 
 More info [here].
 
+[Centre for Cold Matter]: http://www.imperial.ac.uk/centre-for-cold-matter
 [EDMSuite]: https://github.com/ColdMatter/EDMSuite
 [here]: https://github.com/ColdMatter/EDMSuite
 [MOT experiments]: https://en.wikipedia.org/wiki/Magneto-optical_trap
