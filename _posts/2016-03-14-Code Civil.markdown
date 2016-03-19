@@ -46,7 +46,7 @@ Don't worry: I'm not testing anyone's level of French, nor their understanding o
 I'm also not keeping tabs (your answers aren't recorded anywhere).
 It's a simple script that picks out an article from a big list, shows it to you, 
 then compares your answer to a lookup-table to see if you've got it right.
-Have a go! I'm only right about 3/4 of the time. 
+Have a go! 
 
 <em><b><i>
 <script src="https://code.jquery.com/jquery-1.10.2.js">
@@ -95,21 +95,10 @@ function UserFakeClick() {
 }
 </script> 
 
-Now for some ranting, internet crackpot style.
-I think I'm finding this game hard because I can't understand what the real laws mean on a paragraph-ish scale.
+Now for a short rant, internet crackpot style.
 What's striking isn't the difficulty of extracting meaning from computer-generated gibberish, 
 but rather the difficulty of extracting it from actual law.
-Sure, legalese is often inpenetrable. But I sort of feel there's more to it than that.
-
-It's pretty amazing to think that one could account for every aspect of human behaviour and social interaction in a single book. 
-It must either be an insult to ingenuity or be immensly complicated! 
-Assuming the latter, imagine the effort needed to decrypt anything! 
-It'd be like guessing the behaviour of some gargantuan Fortran code by reading only snippets of it.
-
-Also, God forbit any unusual circumstances... What do you do if the answer isn't in the book?
-
-But my biggest grievance is: what's the point of a rulebook if it's written in such impenetrable language?
-I wonder what would happen if no one could ever figure out what the rules were? [...This]?
+I wonder what would happen if no one could figure out what the rules were...
 
 [last post]: /projects/2016/02/26/iChopin.html
 [rnn that learns text]: https://github.com/karpathy/char-rnn
