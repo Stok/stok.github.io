@@ -15,6 +15,7 @@ function selectNewEntry() {
         currentEntry = dataSet[randomIndex];
 }
 
+//Note that this needs jquery!!
 function loadDataset() {
         var json = null;
         $.ajax({

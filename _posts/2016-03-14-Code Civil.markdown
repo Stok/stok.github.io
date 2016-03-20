@@ -48,56 +48,74 @@ It's a simple script that picks out an article from a big list, shows it to you,
 then compares your answer to a lookup-table to see if you've got it right.
 Have a go! 
 
-<em><b><i>
+<div id="articleDiv" style="visibility: visible">
+</div>
+
+<button type="button" onclick="userRealClick();"><b>Real</b></button>
+<button type="button" onclick="userFakeClick();"><b>Fake</b></button>
+<button type="button" onclick="loadNewArticle();"><b>Load different article</b></button>
+
+<div id="answerDiv" style="visibility: hidden">
+</div>
+
 <script src="https://code.jquery.com/jquery-1.10.2.js">
 </script>
 <script type='text/javascript' src='/ccQuiz/ccQuiz.js'>
 </script>
-<script>
-selectNewEntry();
-var sentence = getSentence();
-document.write(sentence);
-</script>
-</i></b></em>
-
-<button type="button" onclick="userRealClick();"><b>Real</b></button>
-<button type="button" onclick="userFakeClick();"><b>Fake</b></button>
-<button type="button" onclick="reloadPage();"><b>Load different article</b></button>
 
 <script>
-function reloadPage() {
-location.reload();
-}
+var green = "#58FA58";
+var red = "#F7819F";
+    
+function loadNewArticle() {
+    var answerDiv = document.getElementById("answerDiv");
+    answerDiv.style.visibility = "hidden";
+    var articleDiv = document.getElementById("articleDiv");
+    selectNewEntry();
+    articleDiv.innerHTML = "<em><b><i>"+ getSentence() + "</i></b></em>";
+    }
+
 function userRealClick() {
     var isTrue = checkIfTrue();
+    var answerDiv = document.getElementById("answerDiv");
     if(isTrue == 1)
     {
-        alert("Congratulations! It is a real article in the Code Civil.")
+         answerDiv.style.color=green;
+         answerDiv.innerText = "Congratulations! It is a real article in the code civil.";
     }
     else
     {
-        alert("Sorry, that one was made up by the rnn.")
+         answerDiv.style.color=red;
+         answerDiv.innerText = "Sorry, that one was made up by the rnn.";
     }
-    reloadPage();
+    answerDiv.style.visibility = "visible";
 }
+
 function userFakeClick() {
-        var isTrue = checkIfTrue();
+    var isTrue = checkIfTrue();
+    var answerDiv = document.getElementById("answerDiv");
     if(isTrue == 1)
     {
-        alert("Nope! That's actually a real article in the code civil.")
+        answerDiv.style.color = red;
+        answerDiv.innerText = "Nope! That's actually a real article in the code civil.";
     }
     else
     {
-        alert("Correct. That was a dummy.")
+        answerDiv.style.color = green;
+        answerDiv.innerText = "Correct. That was a dummy.";
     }
-    reloadPage();
+    answerDiv.style.visibility = "visible";
 }
-</script> 
+
+//Now everything's in place, load article
+loadNewArticle();
+</script>
 
 Now for a short rant, internet crackpot style.
 What's striking isn't the difficulty of extracting meaning from computer-generated gibberish, 
 but rather the difficulty of extracting it from actual law.
 I wonder what would happen if no one could figure out what the rules were...
+
 
 [last post]: /projects/2016/02/26/iChopin.html
 [rnn that learns text]: https://github.com/karpathy/char-rnn
