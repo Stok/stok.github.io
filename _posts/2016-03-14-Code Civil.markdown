@@ -50,27 +50,26 @@ Have a go!
 
 <em><b><i>
 <script src="https://code.jquery.com/jquery-1.10.2.js">
-Access-Control-Allow-Origin: 'https://github.com'
 </script>
 <script type='text/javascript' src='/ccQuiz/ccQuiz.js'>
 </script>
 <script>
-SelectNewEntry();
-var sentence = GetSentence();
+selectNewEntry();
+var sentence = getSentence();
 document.write(sentence);
 </script>
 </i></b></em>
 
-<button type="button" onclick="UserRealClick();"><b>Real</b></button>
-<button type="button" onclick="UserFakeClick();"><b>Fake</b></button>
-<button type="button" onclick="ReloadPage();"><b>Load different article</b></button>
+<button type="button" onclick="userRealClick();"><b>Real</b></button>
+<button type="button" onclick="userFakeClick();"><b>Fake</b></button>
+<button type="button" onclick="reloadPage();"><b>Load different article</b></button>
 
 <script>
-function ReloadPage() {
+function reloadPage() {
 location.reload();
 }
-function UserRealClick() {
-    var isTrue = CheckIfTrue();
+function userRealClick() {
+    var isTrue = checkIfTrue();
     if(isTrue == 1)
     {
         alert("Congratulations! It is a real article in the Code Civil.")
@@ -79,10 +78,10 @@ function UserRealClick() {
     {
         alert("Sorry, that one was made up by the rnn.")
     }
-    ReloadPage();
+    reloadPage();
 }
-function UserFakeClick() {
-        var isTrue = CheckIfTrue();
+function userFakeClick() {
+        var isTrue = checkIfTrue();
     if(isTrue == 1)
     {
         alert("Nope! That's actually a real article in the code civil.")
@@ -91,7 +90,7 @@ function UserFakeClick() {
     {
         alert("Correct. That was a dummy.")
     }
-    ReloadPage();
+    reloadPage();
 }
 </script> 
 
@@ -105,4 +104,3 @@ I wonder what would happen if no one could figure out what the rules were...
 [usage guide]: https://github.com/karpathy/char-rnn
 [legifrance]: http://www.legifrance.gouv.fr
 [github page]: https://github.com/Stok/CCGenerator
-[...This]: https://en.wikipedia.org/wiki/The_Trial

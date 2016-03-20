@@ -1,21 +1,21 @@
-var dataSet = LoadDataset();
-var currentEntry = SelectNewEntry(dataSet);
+var dataSet = loadDataset();
+var currentEntry = selectNewEntry(dataSet);
 
-function CheckIfTrue() {
+function checkIfTrue() {
     return currentEntry.IsTrue;
 }
 
-function GetSentence() {
+function getSentence() {
     return currentEntry.sentence;
 }
 
-function SelectNewEntry() {
+function selectNewEntry() {
         var length = dataSet.length;
         var randomIndex = Math.round(Math.random() * length);
         currentEntry = dataSet[randomIndex];
 }
 
-function LoadDataset() {
+function loadDataset() {
         var json = null;
         $.ajax({
             'async': false,
@@ -26,10 +26,6 @@ function LoadDataset() {
                 json = data;
             }
         });
-        //var length = json.length;
-        //var randomIndex = Math.round(Math.random() * length);
-        //alert(json[randomIndex].sentence)
-        //return json[randomIndex];
         return json;
     };
     
