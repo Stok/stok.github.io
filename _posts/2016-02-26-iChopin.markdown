@@ -55,7 +55,8 @@ Here's an example of some output:
 
 ![example](/photos/outputtxtexample.png)
 
-I found this format works "best". And this is an example of a composition, which I've uploaded to [soundcloud.com]:
+I found this format works "best". And this is an example of a composition, which I've uploaded to [soundcloud.com] 
+after converting to mp3 using [GarageBand]:
 
 <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js">
 </script>
@@ -110,4 +111,5 @@ I'll stop here for this post. Next step: getting this thing online!
 [rnn that learns text]: https://github.com/karpathy/char-rnn
 [a website]: http://www.piano-midi.de/chopin.htm
 [soundcloud.com]: https://soundcloud.com
+[GarageBand]: https://en.wikipedia.org/wiki/GarageBand
 [here]: https://github.com/Stok/Chopino
