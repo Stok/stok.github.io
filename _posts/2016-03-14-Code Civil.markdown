@@ -113,8 +113,8 @@ loadNewArticle();
 
 Now for a short rant, internet crackpot style.
 What's striking isn't the difficulty of extracting meaning from computer-generated gibberish, 
-but rather the difficulty of extracting it from actual law.
-I wonder what would happen if no one could figure out what the rules were...
+but rather the difficulty of extracting it from actual law. Does it really have to be written in such a convoluted style?
+I wonder what society would look like if no one could ever figure out what any of the rules were. If wish [someone] would write a story about living life in a society like that...
 
 
 [last post]: /projects/2016/02/26/iChopin.html
@@ -122,3 +122,4 @@ I wonder what would happen if no one could figure out what the rules were...
 [usage guide]: https://github.com/karpathy/char-rnn
 [legifrance]: http://www.legifrance.gouv.fr
 [github page]: https://github.com/Stok/CCGenerator
+[someone]: https://en.wikipedia.org/wiki/The_Trial

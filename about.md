@@ -4,5 +4,4 @@ title: About
 permalink: /about/
 ---
 
-My name is Sean Tokunaga. Welcome to what I hope will soon be a collection of my coding projects.
-
+My name is Sean Tokunaga. Welcome to my blog.
