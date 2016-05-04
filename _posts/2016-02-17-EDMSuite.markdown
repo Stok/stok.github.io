@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Controlling molecular beams"
+title:  "Controlling molecular beams using C#/DAQmx: EDMSuite"
 date:   2016-02-17 14:47 +0100
 categories: Projects
 ---
