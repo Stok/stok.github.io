@@ -51,7 +51,6 @@ Now: the server will pass on any arguments you send it in an http GET/POST to th
 {% highlight python %}
 
 form = cgi.FieldStorage()
-
 departure_date = form.getvalue('departure_date')
 
 {% endhighlight %}
