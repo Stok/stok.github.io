@@ -104,5 +104,5 @@ There we go. Everything we need to control an experiment from a browser. The cod
 [plotly]: https://plot.ly/javascript/
 [DAQmxTriggeredMultiAIHardware.cs]: https://github.com/Stok/EDMPlotter/blob/master/DAQ/DAQmxTriggeredMultiAIHardware.cs
 [this tutorial]: http://www.asp.net/signalr/overview/getting-started/tutorial-server-broadcast-with-signalr
-[here]: https://github.com/Stok/EDMPlotter
+[here]: https://github.com/Stok/SRExpCtrl
 
