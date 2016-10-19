@@ -72,11 +72,11 @@ Because I screwed up so many times, I'm not too sure about the order in which th
 
 4/ Open the configuration file using the text editor of your choice: (sudo) nano /etc/lighttpd/lighttpd.conf. Set the "server.document-root" to the root of your website (/var/www/mysite, if you follow the usual custom). It's important to make a note of the "server.username" and "server.groupname" values. You'll want your website to be owned by that user/group. Use chown and chgrp as necessary once you've uploaded the site. You'll also want to set the permissions of your site to 755 using chmod. A note of caution here: several how-to blogs seem to describe a slightly different procedure. I'm guessing they were for a different version of lighttpd. For instance, I came across instructions to manually add the cgi module within the config file (instead of what we did in 3/). This crashed my version.
 
-5/ Open the mod config file: (sudo) nano /etc/lighttpd/conf-enabled/10-cgi.conf. Change: 
+5/ Open the mod config file: (sudo) nano /etc/lighttpd/conf-enabled/10-cgi.conf. This is the step where we tell the server to run python3 if it encounters a .py file. Change: 
 
 cgi.assign = ( "" => "" ) to cgi.assign = ( ".py" => "/usr/bin/python3" )
 
-oon the right-hand-side, insert the path to your interpreter of choice. This is the step where we tell the server to run python3 if it encounters a .py file.
+Insert the path to your interpreter of choice on the right-hand-side. 
 
 6/ Restart by calling (sudo) /etc/init.d/lighttpd restart.
 
