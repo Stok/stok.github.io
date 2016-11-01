@@ -8,7 +8,9 @@ My name is Sean Tokunaga. I'm an associate professor ('maître de conférences')
 I started [this blog] because of my growing interest in computers.
 
 For the work I do as a an experimental physicist, see either:
+
 1. The [website of the research group I belong to at the university] (mostly only available in french, regretfully)
+
 2. One of my profiles on [ResearchGate], [LinkedIn] and [Google Scholar]
 
 [website of the research group I belong to at the university]: http://www-lpl.univ-paris13.fr/fr/hotes.awp
