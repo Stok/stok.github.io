@@ -5,7 +5,7 @@ date:   2016-05-03 17:00:00 +0100
 categories: Projects
 ---
 
-In a previous [post], I presented a Python script for scraping some data off of a website. I then put that script on an AWS micro-instance. Here are some of the details on getting the server bit up and running. Disclaimer: I'd never done this before, and many of the concepts are new to me. Be prepared for some lack of clarity and a good dose of bullshit. 
+In a previous [post], I presented a Python script for scraping some data off of a website. I then put that script on an AWS micro-instance. Here are some of the details on getting the server bit up and running. 
 
 The [common gateway interface (CGI)] is used to create dynamic websites. Looking at examples on how this works, I gather that the server is told to run a specific interpreter (python, say) on a script (kept server-side). The script can be made to respond with some html that the server can display as the result. I'm not too sure about how this gets done. I just figured out how to set it up.
 

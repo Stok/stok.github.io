@@ -1,5 +1,7 @@
 ---
 layout: default
+title: the projects (the blog)
+permalink: /blog/
 ---
 
 <div class="home">

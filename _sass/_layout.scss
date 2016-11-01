@@ -3,7 +3,8 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 2px solid $grey-color-dark;
+    background-color: $background-color-dark;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -98,7 +99,8 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 2px solid $grey-color-dark;
+    background-color: $background-color-dark;
     padding: $spacing-unit 0;
 }
 
@@ -168,6 +170,7 @@
  * Page content
  */
 .page-content {
+    border-top: 2px solid $grey-color-dark;
     padding: $spacing-unit 0;
 }
 
@@ -193,8 +196,6 @@
     display: block;
     font-size: 24px;
 }
-
-
 
 /**
  * Posts
