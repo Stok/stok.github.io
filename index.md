@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The Stoked Projects
+title: the stoked projects
 ---
 
 <div class="home">
