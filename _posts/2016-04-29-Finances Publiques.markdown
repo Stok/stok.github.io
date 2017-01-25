@@ -137,7 +137,7 @@ I wonder if they ever compile statistics based on all the data they have. It see
 Anyway, I'm glad this project is over. It was driving me slightly crazy. I put the script on an AWS micro-instance running lighttpd, which you can query from here. More on how I did that in a separate post. Here is the result: Insert the departure/return dates, the destination country code and the 'meal cap' and click send to obtain an estimate of the reimbursement. 
 
 <div>
-	<form action="http://ec2-52-48-220-32.eu-west-1.compute.amazonaws.com/cgi-bin/scrapefp.py" method='get' id='info_trip'>
+	<form action="http://ec2-34-249-53-121.eu-west-1.compute.amazonaws.com/cgi-bin/scrapefp.py" method='get' id='info_trip'>
         <li> 
             <label for='departure_date'>Departure Date</label>
             <input type='text' id='departure_date' name='departure_date' value='dd/mm/yy_HH:MM'/>
