@@ -20,9 +20,15 @@
           </li>
           {% endif %}
 
-          {% if site.github_username %}
+          {% if site.researchgate_username %}
           <li>
             {% include icon-researchgate.html username=site.researchgate_username %}
+          </li>
+          {% endif %}
+
+          {% if site.codewars_username %}
+          <li>
+            {% include icon-codewars.html username=site.codewars_username %}
           </li>
           {% endif %}
 
