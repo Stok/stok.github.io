@@ -6,7 +6,7 @@ categories: Projects
 ---
 
 A few quick examples of how to use pipenv.
-So far, I've found that whenever anyone says `pip install package`, you can just replace `pip` with `pipenv`.
+So far, I've found that whenever anyone tell you to do `pip install package`, you can just replace `pip` with `pipenv`.
 So, to install the notebook application [jupyter], run
 ```
 pipenv install jupyter
@@ -15,9 +15,9 @@ Now, because you've installed it inside a virtual environment, you'll get a `com
 To access it, you need to open a shell that knows about the virtual environment. 
 So run
 ```
-pipenv shell".
+pipenv shell
 ```
-Your terminal's input should go from looking like:
+Your terminal should go from looking like:
 ```
 computer_name:folder_name user$ 
 ```
@@ -25,7 +25,7 @@ to something more like:
 ```
 (folder_name_SOME_WEIRD_ID) bash-3.2$
 ```
-Now you can run `jupyter notebook` and jupyter should run.
+Now you can run `jupyter notebook` and it should run.
 
 [jupyter]: http://jupyter.org
 
