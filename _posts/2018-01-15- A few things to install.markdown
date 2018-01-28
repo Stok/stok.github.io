@@ -12,8 +12,8 @@ So, I want to be able to use python on a newly acquired macbook. High Sierra com
 ```
 brew install python3
 ```
-Now for configuring the terminal shell.
-3. Add a .profile file in home folder, and include the following:
+
+3. Now for configuring the shell. Add a ~/.profile file (basically the same as a ~/.bash_profile) and include the following:
 ```
 export LC_ALL="fr_FR.UTF-8"  
 export LANG="fr_FR.UTF-8"
@@ -24,6 +24,7 @@ alias python=python3
 
 The first two are language localisation settings. Adjust as needed. The third line adds `/usr/local/bin` and `/usr/local/sbin` to your PATH (to make sure the terminal can find programs you've installed). The last two are shortcuts: when I type `pip`/`python` in the terminal, it actually runs `pip3`/`python3`
 . I basically never want to use python 2.7, and want to make sure I never accidentally call them.
+Note: whenever you make changes to this file, you need to run `source ~/.profile` so the changes take effect.
 
 Then, following [the hitchhiker's guide to python's page on virtual environments], I'll install `pipenv`. It's basically `pip` and `virtualenv` rolled into one. (the environements get installed to `~/.local/share/virtualenvs/`, with a shortcut at `~/`). To install, run:
 ```
