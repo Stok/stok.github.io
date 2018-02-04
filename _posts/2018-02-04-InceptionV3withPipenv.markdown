@@ -5,7 +5,7 @@ date:   2018-02-04 13:00:00 +0100
 categories: Projects
 ---
 
-Following the [tutorials], I assembled everything I needed to retrain and run inception V3 and dumped it in a [repository] for easy access.
+Following the [tutorials], I assembled everything I needed to retrain and run inception V3. I added a quick pipenv configuration and dumped the lot in a [repository] for easy access.
 
 ## To set up
 
