@@ -5,7 +5,7 @@ date:   2018-02-04 13:00:00 +0100
 categories: Projects
 ---
 
-Following the [tutorials], I assembled everything I needed to retrain and run inception V3 and dumped it in a repository for easy access.
+Following the [tutorials], I assembled everything I needed to retrain and run inception V3 and dumped it in a [repository] for easy access.
 
 ## To set up
 
@@ -36,3 +36,4 @@ python3 -m label_image --graph=./tf_files/retrained_graph.pb  --image=./myExtraP
 
 
 [tutorials]: https://www.tensorflow.org/tutorials/image_retraining
+[repository]: https://github.com/Stok/tf_inceptionV3_pipenv_setup
