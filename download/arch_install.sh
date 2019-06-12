@@ -12,12 +12,12 @@ else
 fi
 
 sgdisk -og $1
-sgdisk -n 1:2048:4095 -c 1:"bios" -t 1:ef02 $1
-sgdisk -n 2:4096:413695 -c 2:"boot" -t 2:8300 $1
-sgdisk -n 3:413696:8802303 -c 3:"root" -t 3:8300 $1
-sgdisk -n 4:8802304:10899455 -c 4:"swap" -t 3:8200 $1
+sgdisk -n 1:0:+1024KiB -c 1:"bios" -t 1:ef02 $1
+sgdisk -n 2:0:+512MiB -c 2:"boot" -t 2:8300 $1
+sgdisk -n 3:0:+4GiB -c 3:"root" -t 3:8300 $1
+sgdisk -n 4:0:+1024MiB -c 4:"swap" -t 3:8200 $1
 ENDSECTOR=`sgdisk -E $1`
-sgdisk -n 5:10899456:$ENDSECTOR -c 5:"home" -t 4:8300 $1
+sgdisk -n 5:0:$ENDSECTOR -c 5:"home" -t 4:8300 $1
 sgdisk -p $1
 
 # formatting drive
