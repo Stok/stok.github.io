@@ -48,6 +48,9 @@ hwclock --systohc
 # set password
 passwd
 
+#Update pacman keyring
+pacman -Sy archlinux-keyring && pacman -Syyu
+
 # Installing grub
 pacman –S grub os-prober
 
