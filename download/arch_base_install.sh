@@ -41,24 +41,4 @@ pacstrap /mnt base
 # Generating an fstab
 genfstab -U /mnt >> /mnt/etc/fstab
 
-# chroot in to new system
-arch-chroot /mnt
-
-# setting time
-ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
-hwclock --systohc
-
-# set password
-passwd
-
-# Installing grub
-pacman –S grub os-prober
-
-# Then install
-grub-install $1
-grub-mkconfig -o /boot/grub/grub.cfg
-#(Select the disk, not the partition!)
-
-echo "Done. reboot drive by calling 'reboot'"
-
 exit 0
