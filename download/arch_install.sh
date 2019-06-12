@@ -12,13 +12,13 @@ sgdisk -og $1
 sgdisk -n 1:0:+1024KiB -c 1:"bios" -t 1:ef02 $1
 sgdisk -n 2:0:+512MiB -c 2:"boot" -t 2:8300 $1
 sgdisk -n 3:0:+4GiB -c 3:"root" -t 3:8300 $1
-sgdisk -n 4:0:+1024MiB -c 4:"swap" -t 3:8200 $1
+sgdisk -n 4:0:+1024MiB -c 4:"swap" -t 4:8200 $1
 ENDSECTOR=`sgdisk -E $1`
-sgdisk -n 5:0:$ENDSECTOR -c 5:"home" -t 4:8300 $1
+sgdisk -n 5:0:$ENDSECTOR -c 5:"home" -t 5:8300 $1
 sgdisk -p $1
 
 # formatting drive
-mkfs.ext4 /dev/sda3, then y
+mkfs.ext4 /dev/sda3 #, then y
 # mount this new root drive
 mount /dev/sda3 /mnt
 
