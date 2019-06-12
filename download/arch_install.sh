@@ -2,10 +2,10 @@
 
 if [ -z "$1" ]
 then
-      echo "Formatting disk $1"
+    echo "No disk specified for install (typically use /dev/sda if virtualbox). Quitting."
+    exit 1
 else
-      echo "No disk specified for install (typically use /dev/sda if virtualbox. Quitting."
-      exit 1
+    echo "Formatting disk $1"
 fi
 
 sgdisk -og $1
