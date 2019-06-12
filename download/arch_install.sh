@@ -32,6 +32,9 @@ mkfs.fat -F32 /dev/sda2
 # Mount
 mount /dev/sda2 /boot
 
+#Update pacman keyring
+pacman -Sy archlinux-keyring && pacman -Syyu
+
 # Start install
 pacstrap /mnt base
 
@@ -47,9 +50,6 @@ hwclock --systohc
 
 # set password
 passwd
-
-#Update pacman keyring
-pacman -Sy archlinux-keyring && pacman -Syyu
 
 # Installing grub
 pacman –S grub os-prober
