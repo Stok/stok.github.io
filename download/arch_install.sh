@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-#Set timezone:
-timedatectl set-timezone Europe/Paris
-
 if [ -z "$1" ]
 then
     echo "No disk specified for install (typically use /dev/sda if virtualbox). Quitting."
@@ -21,10 +18,19 @@ sgdisk -n 5:0:$ENDSECTOR -c 5:"home" -t 4:8300 $1
 sgdisk -p $1
 
 # formatting drive
-mkfs.ext4 /dev/sda2, then y
+mkfs.ext4 /dev/sda3, then y
+# mount this new root drive
+mount /dev/sda3 /mnt
 
-# mount this new drive
-mount /dev/sda2 /mnt
+# Make swap
+mkswap /dev/sda4
+# turn swap on
+swapon /dev/sda4
+
+# Make efi
+mkfs.fat -F32 /dev/sda2
+# Mount
+mount /dev/sda2 /boot
 
 # Start install
 pacstrap /mnt base
