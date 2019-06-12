@@ -47,10 +47,11 @@ arch-chroot /mnt hwclock --systohc
 
 
 # set password
+echo "Setting root password."
 arch-chroot /mnt passwd
 
 # Installing grub
-arch-chroot /mnt pacman –S install grub os-prober
+arch-chroot /mnt pacman -S grub os-prober
 
 # Then install
 arch-chroot /mnt grub-install $1
