@@ -41,10 +41,6 @@ pacstrap /mnt base
 # Generating an fstab
 genfstab -U /mnt >> /mnt/etc/fstab
 
-# setting time
-arch-chroot /mnt ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
-arch-chroot /mnt hwclock --systohc
-
 # set password
 echo "Setting root password. Caution! keyboard will not be reset upon reboot!"
 arch-chroot /mnt passwd
