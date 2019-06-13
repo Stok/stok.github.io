@@ -25,7 +25,7 @@ mount /dev/sda3 /mnt
 # formatting home drive
 mkfs.ext4 /dev/sda5
 # mount
-mount /dev/sda5 /home
+mount /dev/sda5 /mnt/home
 
 # Make swap
 mkswap /dev/sda4
@@ -35,7 +35,7 @@ swapon /dev/sda4
 # Make efi
 mkfs.fat -F32 /dev/sda2
 # Mount
-mount /dev/sda2 /boot
+mount /dev/sda2 /mnt/boot
 
 #Update pacman keyring
 pacman -Sy archlinux-keyring && pacman -Syyu
@@ -45,8 +45,8 @@ pacstrap /mnt base
 
 # Generating an fstab
 genfstab -U /mnt >> /mnt/etc/fstab
-genfstab -U /home >> /mnt/etc/fstab
-cat /mnt/etc/fstab | awk '!x[$0]++' > /mnt/etc/fstab #remove duplicate lines (swap)
+#genfstab -U /home >> /mnt/etc/fstab
+#cat /mnt/etc/fstab | awk '!x[$0]++' > /mnt/etc/fstab #remove duplicate lines (swap)
 
 # set password
 echo "Setting root password. Caution! keyboard will not be reset upon reboot!"
