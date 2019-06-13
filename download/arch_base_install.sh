@@ -17,10 +17,15 @@ ENDSECTOR=`sgdisk -E $1`
 sgdisk -n 5:0:$ENDSECTOR -c 5:"home" -t 5:8300 $1
 sgdisk -p $1
 
-# formatting drive
-mkfs.ext4 /dev/sda3 #, then y
-# mount this new root drive
+# formatting root drive
+mkfs.ext4 /dev/sda3
+# mount this new root drive as root
 mount /dev/sda3 /mnt
+
+# formatting home drive
+mkfs.ext4 /dev/sda5
+# mount
+mount /dev/sda5 /home
 
 # Make swap
 mkswap /dev/sda4
