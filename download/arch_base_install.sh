@@ -45,6 +45,7 @@ pacstrap /mnt base
 
 # Generating an fstab
 genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U /home >> /mnt/etc/fstab
 
 # set password
 echo "Setting root password. Caution! keyboard will not be reset upon reboot!"
