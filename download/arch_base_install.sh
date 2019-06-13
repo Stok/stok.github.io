@@ -44,10 +44,11 @@ pacman -Sy archlinux-keyring && pacman -Syyu
 pacstrap /mnt base
 
 # Generating an fstab
-genfstab -U /mnt >> /mnt/etc/fstab
-genfstab -U /mnt/home >> /mnt/etc/fstab
-genfstab -U /mnt/boot >> /mnt/etc/fstab
-cat /mnt/etc/fstab | awk '!x[$0]++' > /mnt/etc/fstab #remove duplicate lines (swap)
+genfstab -U /mnt >> /mnt/etc/fstab_
+genfstab -U /mnt/home >> /mnt/etc/fstab_
+genfstab -U /mnt/boot >> /mnt/etc/fstab_
+cat /mnt/etc/fstab_ | awk '!x[$0]++' >> /mnt/etc/fstab #remove duplicate lines (swap)
+rm /mnt/etc/fstab_
 
 # set password
 echo "Setting root password. Caution! keyboard will not be reset upon reboot!"
