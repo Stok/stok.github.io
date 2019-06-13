@@ -25,6 +25,7 @@ mount /dev/sda3 /mnt
 # formatting home drive
 mkfs.ext4 /dev/sda5
 # mount
+mkdir /mnt/home
 mount /dev/sda5 /mnt/home
 
 # Make swap
@@ -35,6 +36,7 @@ swapon /dev/sda4
 # Make efi
 mkfs.fat -F32 /dev/sda2
 # Mount
+mkdir /mnt/boot
 mount /dev/sda2 /mnt/boot
 
 #Update pacman keyring
