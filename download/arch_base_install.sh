@@ -61,4 +61,5 @@ arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
 #(Select the disk, not the partition!)
 
 echo "Done. reboot drive by calling 'reboot'"
+echo "IF YOU ARE USING VIRTUALBOX, REMEBER TO RUN arch_virtualbox_config.sh!!"
 exit 0
