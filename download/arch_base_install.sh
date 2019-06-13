@@ -45,7 +45,8 @@ pacstrap /mnt base
 
 # Generating an fstab
 genfstab -U /mnt >> /mnt/etc/fstab
-genfstab -U /home -f swap >> /mnt/etc/fstab
+genfstab -U /home >> /mnt/etc/fstab
+cat /mnt/etc/fstab | awk '!x[$0]++' >> /mnt/etc/fstab #remove duplicate lines (swap)
 
 # set password
 echo "Setting root password. Caution! keyboard will not be reset upon reboot!"
