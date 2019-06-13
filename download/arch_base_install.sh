@@ -44,11 +44,10 @@ pacman -Sy archlinux-keyring && pacman -Syyu
 pacstrap /mnt base
 
 # Generating an fstab
-genfstab -U /mnt >> /mnt/etc/fstab_
-genfstab -U /mnt/home >> /mnt/etc/fstab_
-genfstab -U /mnt/boot >> /mnt/etc/fstab_
-cat /mnt/etc/fstab_ | awk '!x[$0]++' >> /mnt/etc/fstab #remove duplicate lines (swap)
-rm /mnt/etc/fstab_
+genfstab -U /mnt >> /mnt/etc/fstab
+#genfstab -U /mnt/home >> /mnt/etc/fstab
+#genfstab -U /mnt/boot >> /mnt/etc/fstab
+#cat /mnt/etc/fstab | awk '!x[$0]++' >> /mnt/etc/fstab #remove duplicate lines (swap)
 
 # set password
 echo "Setting root password. Caution! keyboard will not be reset upon reboot!"
@@ -61,6 +60,10 @@ arch-chroot /mnt pacman -S grub os-prober
 arch-chroot /mnt grub-install $1
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
 #(Select the disk, not the partition!)
+
+umount /mnt/boot
+umount /mnt/home
+umount /mnt
 
 echo "Done. reboot drive by calling 'reboot'"
 echo "IF YOU ARE USING VIRTUALBOX, REMEBER TO RUN arch_virtualbox_config.sh!!"
