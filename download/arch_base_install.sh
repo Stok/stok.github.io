@@ -45,11 +45,8 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 arch-chroot /mnt hwclock --systohc
 
-# making persistent change to keyboard
-arch-chroot /mnt localectl set-keymap --no-convert fr
-
 # set password
-echo "Setting root password."
+echo "Setting root password. Caution! keyboard will not be reset upon reboot!"
 arch-chroot /mnt passwd
 
 # Installing grub
